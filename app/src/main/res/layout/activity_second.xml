@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/backLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/ic_arrow_black_black_24dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/number01Layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/backLayout"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/backLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Number 01"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/num01"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/number02Layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/number01Layout"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/number01Layout"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Number 02"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/num02"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultShowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/number02Layout"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/number02Layout"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Result"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnRow02Layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/BtnRow01Layout"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnRow01Layout"
+        app:layout_constraintVertical_bias="0.217"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <Button
+            android:id="@+id/multyBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/divideBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnRow01Layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/resultShowLayout"
+        android:layout_marginTop="76dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/resultShowLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="@android:color/holo_blue_bright"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="-" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
